@@ -1,0 +1,34 @@
+/* tailwind.css */
+
+/* Import Tailwind's base styles */
+@tailwind base;
+
+/* Import Tailwind's component styles */
+@tailwind components;
+
+/* Import Tailwind's utility styles */
+@tailwind utilities;
+
+/* You can extend Tailwind's theme or add custom styles here */
+@layer components {
+  /* Example custom component styles */
+  .btn {
+    @apply px-4 py-2 bg-blue-500 text-white rounded-md shadow-md hover:bg-blue-600;
+  }
+
+  .card {
+    @apply p-4 bg-white rounded-lg shadow-lg;
+  }
+}
+
+@layer utilities {
+  /* Example custom utility classes */
+  .scrollbar-hidden {
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  }
+  
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+}
